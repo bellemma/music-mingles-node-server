@@ -1,0 +1,19 @@
+{
+  "name": "music-mingles-node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bellemma/music-mingles-node-server.git"
+  },
+  "author": "Emma Bell and Sarah Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bellemma/music-mingles-node-server/issues"
+  },
+  "homepage": "https://github.com/bellemma/music-mingles-node-server#readme"
+}
