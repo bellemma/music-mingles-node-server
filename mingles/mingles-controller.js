@@ -6,12 +6,12 @@ export const getMingles = () => mingles;
 const MinglesController = (app) => {
 
   const createMingle   = async (req, res) => {
-    const movie = req.body
+    const mingle = req.body
     // movie["_id"] = (new Date()).getTime() + ''
     // movie["likes"] = 0
     // movie["liked"] = false
     // movies.push(movie)
-    const actualMingle = await mingleDao.createMingle(movie)
+    const actualMingle = await mingleDao.createMingle(mingle)
     res.send(actualMingle)
   }
   const findAllMingles = async (req, res) => {
@@ -37,10 +37,10 @@ const MinglesController = (app) => {
     res.send(status)
   }
 
-  app.post  ('/movies', createMingle)
-  app.get   ('/movies', findAllMingles)
-  app.put   ('/movies/:mid', updateMingle)
-  app.delete('/movies/:mid', deleteMingle)
+  app.post  ('/mingles', createMingle)
+  app.get   ('/mingles', findAllMingles)
+  app.put   ('/mingles/:mid', updateMingle)
+  app.delete('/mingles/:mid', deleteMingle)
 }
 
-export default MoviesController;
+export default MinglesController;

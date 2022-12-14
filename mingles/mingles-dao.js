@@ -1,4 +1,3 @@
-import moviesModel from "./mingles-model.js";
 import minglesModel from "./mingles-model.js";
 
 export const findAllMingles = async () => {
